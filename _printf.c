@@ -34,13 +34,13 @@ int _printf(const char *format, ...)
 					i += str_handle(va_arg(arg, char *));
 					break;
 				}
-				/*case 'd':
+				case 'd':
 				{
 					i += digit_handle(va_arg(arg, int), buffer);
 					break;
 				}
 				case 'i':
-					i += int_handle(va_arg(arg, int), buffer);*/
+					i += int_handle(va_arg(arg, int), buffer);
 			}
 		}
 	else
