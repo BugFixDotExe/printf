@@ -6,15 +6,15 @@ int _printf(const char *format, ...)
 	int i = 0;
 	/*char *str;*/
 	void *buffer = malloc(1024);
-	/*char *new_line = "\n";*/
+	char *new_line = "\n";
 
 	va_start(arg, format);
 	if (buffer == NULL)
 		return (0);
 	if (*format == '\0')
 	{
-		/*write(1, new_line, 1);
-		va_end(arg);*/
+		write(1, new_line, 1);
+		va_end(arg);
 		return (0);
 	}
 	while (*format != '\0')
