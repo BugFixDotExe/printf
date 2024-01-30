@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * str_handle - prodcues string output according to format
  * @str: string
