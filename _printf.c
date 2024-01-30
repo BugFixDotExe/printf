@@ -24,6 +24,11 @@ int _printf(const char *format, ...)
 			format++;
 			switch (*format)
 			{
+				case '%':
+				{
+					i += write (1, format, 1);
+					break;
+				}
 				case 'c':
 				{
 					i += char_handle(va_arg(arg, int));
