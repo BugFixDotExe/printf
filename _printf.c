@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+
+/**
+ * _printf - a function that produces output according to a format.
+ * @format: the spacifier
+ * Return: a count of both format and ..
+ */
 int _printf(const char *format, ...)
 {
 	va_list arg;
