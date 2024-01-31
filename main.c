@@ -9,6 +9,8 @@
  */
 int main(void)
 {
-    _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	int  i;
+   i =  _printf("%");
+   printf("LEN: %d", i);
     return (0);
 }
