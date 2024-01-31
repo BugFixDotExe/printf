@@ -7,9 +7,13 @@
  */
 int str_handle(char *str)
 {
-	int count = 0;
-	size_t str_len = strlen(str);
+	size_t str_len;
 
+	int count = 0;
+
+	if (str == NULL)
+		str = "(nil)";
+	str_len = strlen(str);
 	count += write(1, str, str_len);
 	return (count);
 }
