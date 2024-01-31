@@ -7,7 +7,9 @@ int _printf(const char *format, ...)
 	/*char *str;*/
 	void *buffer = malloc(1024);
 	char *new_line = "\n";
-
+	
+	if (format == NULL)
+		return (0);
 	va_start(arg, format);
 	if (buffer == NULL)
 		return (0);
