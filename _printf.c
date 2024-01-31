@@ -29,6 +29,8 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
+			if (*format == '%' && strlen(format) <= 1)
+				return (0);
 			format++;
 			switch (*format)
 			{
