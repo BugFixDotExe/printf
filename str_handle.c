@@ -12,7 +12,7 @@ int str_handle(char *str)
 	int count = 0;
 
 	if (str == NULL)
-		str = "(nil)";
+		str = "(null)";
 	str_len = strlen(str);
 	count += write(1, str, str_len);
 	return (count);
