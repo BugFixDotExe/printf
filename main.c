@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-    _printf("%b", -1029847239487724);
+    _printf("%b", -1024);
     printf("\n");
     return (0);
 }
