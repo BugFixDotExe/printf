@@ -55,7 +55,15 @@ int _printf(const char *format, ...)
 					break;
 				}
 				case 'i':
+				{
 					i += int_handle(va_arg(arg, int), buffer);
+					break;
+				}
+				case 'b':
+				{
+					int_to_binary(va_arg(arg, unsigned int));
+					break;
+				}
 			}
 		}
 	else

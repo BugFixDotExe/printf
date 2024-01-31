@@ -9,8 +9,7 @@
  */
 int main(void)
 {
-	int  i;
-   i =  _printf("%");
-   printf("LEN: %d", i);
+    _printf("%b", -1029847239487724);
+    printf("\n");
     return (0);
 }
