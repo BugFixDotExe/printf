@@ -28,7 +28,8 @@ int int_to_binary(unsigned int a)
 	for (i = i - 1; i >= 0; i--)
 	{
 		char digit = *(buffer + i) + '0';
-		len = write(1, &digit, 1);
+		len += write(1, &digit, 1);
 	}
+	free(buffer);
 	return (len);
 }
