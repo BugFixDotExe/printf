@@ -9,8 +9,13 @@ int int_to_binary(unsigned int a)
 {
 	int i;
 	int *buffer;
+	int size;
+	unsigned int temp;
 
-	buffer = malloc(sizeof(unsigned int) * a);
+	size = 0;
+	for (temp = a; temp > 0; temp /= 2)
+		size++;
+	buffer = malloc(sizeof(int) * size);
 	if (buffer == NULL)
 		return (0);
 	for (i = 0; a > 0; i++)
@@ -20,7 +25,8 @@ int int_to_binary(unsigned int a)
 	}
 	for (i = i - 1; i >= 0; i--)
 	{
-		printf("%d", *(buffer + i));
+		char digit = *(buffer + i) + '0';
+		write(1, &digit, 1);
 	}
 	return (0);
 }
