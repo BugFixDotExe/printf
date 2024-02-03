@@ -11,6 +11,7 @@ int int_to_binary(unsigned int a)
 	int *buffer;
 	int size;
 	int len;
+	char digit;
 	unsigned int temp;
 
 	size = 0;
@@ -27,7 +28,7 @@ int int_to_binary(unsigned int a)
 	}
 	for (i = i - 1; i >= 0; i--)
 	{
-		char digit = *(buffer + i) + '0';
+		digit = *(buffer + i) + '0';
 		len += write(1, &digit, 1);
 	}
 	free(buffer);
