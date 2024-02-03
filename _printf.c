@@ -77,6 +77,12 @@ int _printf(const char *format, ...)
 				case 'x':
 				{
 					i += int_to_hex(va_arg(arg, int), buffer);
+					break;
+				}
+				case 'X':
+				{
+					i += int_to_hex_upper(va_arg(arg, int), buffer);
+					break;
 				}
 			}
 		}
