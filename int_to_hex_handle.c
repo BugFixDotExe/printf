@@ -13,6 +13,6 @@ int int_to_hex(int data, void *buffer)
 
 	count = 0;
 	count = sprintf(buffer, "%x", data);
-	count += write(1, buffer, count);
+	write(1, buffer, count);
 	return (count);
 }
