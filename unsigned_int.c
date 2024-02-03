@@ -6,6 +6,6 @@ int unsigned_int(unsigned int data, void *buffer)
 	
 	count = 0;
 	count = sprintf(buffer, "%u", data);
-	write(1, buffer, count);
+	count = write(1, buffer, count);
 	return (count);
 }
