@@ -74,6 +74,10 @@ int _printf(const char *format, ...)
 					i += int_to_octal(va_arg(arg, unsigned int), buffer);
 					break;
 				}
+				case 'x':
+				{
+					i += int_to_hex(va_arg(arg, int), buffer);
+				}
 			}
 		}
 	else

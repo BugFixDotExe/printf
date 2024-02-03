@@ -18,4 +18,5 @@ int int_handle(int data, void *buffer);
 int int_to_binary(unsigned int data);
 int unsigned_int(unsigned int data, void *buffer);
 int int_to_octal(int data, void *buffer);
+int int_to_hex(int data, void *buffer);
 #endif
