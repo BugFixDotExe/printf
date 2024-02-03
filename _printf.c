@@ -69,6 +69,11 @@ int _printf(const char *format, ...)
 					i += unsigned_int(va_arg(arg, unsigned int), buffer);
 					break;
 				}
+				case 'o':
+				{
+					i += int_to_octal(va_arg(arg, unsigned int), buffer);
+					break;
+				}
 			}
 		}
 	else
