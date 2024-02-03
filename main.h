@@ -17,5 +17,5 @@ int digit_handle(int data, void *buffer);
 int int_handle(int data, void *buffer);
 int int_to_binary(unsigned int data);
 int unsigned_int(unsigned int data, void *buffer);
-int int_to_octal(int data);
+int int_to_octal(int data, void *buffer);
 #endif
