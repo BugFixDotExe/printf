@@ -64,6 +64,11 @@ int _printf(const char *format, ...)
 					i += int_to_binary(va_arg(arg, unsigned int));
 					break;
 				}
+				case 'u':
+				{
+					i += unsigned_int(va_arg(arg, unsigned int), buffer);
+					break;
+				}
 			}
 		}
 	else

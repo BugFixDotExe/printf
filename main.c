@@ -7,6 +7,6 @@
  *     */
 int main(void)
 {
-	_printf("%b\n", 1024);
+	_printf("%u", UINT_MAX);
 	return (0);
 }
