@@ -61,7 +61,7 @@ int _printf(const char *format, ...)
 				}
 				case 'b':
 				{
-					int_to_binary(va_arg(arg, unsigned int));
+					i += int_to_binary(va_arg(arg, unsigned int));
 					break;
 				}
 			}
